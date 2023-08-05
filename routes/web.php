@@ -34,6 +34,9 @@ Route::get('/dashboard', function () {
 Route::middleware('auth')->group(function () {
     Route::get('/super', [SuperController::class, 'index'])->name('superdashboard');
     Route::get('/super/add-admin', [SuperController::class, 'addAdmin'])->name('superaddadmin');
+    Route::post('/super/add-admin', [SuperController::class, 'store_admin']);
+
+    Route::get('/super/edit-admin/{user:id}', [SuperController::class, 'editAdmin'])->name('supereditadmin');
     Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
     // Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     // Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');

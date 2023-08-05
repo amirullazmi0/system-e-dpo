@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
-import '../../css/item.css'
 import { Head, Link, router } from '@inertiajs/react'
 
 export default function Login(props) {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [errors, setErrors] = useState(props.errors)
-
+    console.log('props', props);
     const handleLogin = () => {
         const data = {
             email, password
@@ -29,7 +28,7 @@ export default function Login(props) {
                                 <h1>kalimantan Barat</h1>
                             </div>
                         </div>
-                        {props.errors.email != null || props.errors.password != null ?
+                        {props.errors.email != null || props.errors.password != null || props.flash.error ?
                             <>
                                 <div className="card-errors flex justify-center">
                                     periksa kembali password dan email

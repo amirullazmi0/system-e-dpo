@@ -145,14 +145,14 @@ body{
     display: grid;
     gap: 8px;
 }
-
+/* item */
 .btn-green{
-    background-color: #9EF01A;
+    background-color: #38B000;
     color: #000000;
 }
 
 .btn-green:hover{
-    background-color: #38B000;
+    background-color: #33860d;
     color: #FFFFFF;
 }
 
@@ -174,15 +174,82 @@ body{
 }
 
 .btn-yellow{
-    background-color: #dddf00;
+    background-color: #ecf000;
     color: #000000;
 }
 
 .btn-yellow:hover{
-    background-color: #bfd200;
+    background-color: #fae106;
     color: #000000;
 }
+.btn-red{
+    background-color: #ff0707;
+    color: #ffffff;
+}
+.btn-red:hover{
+    background-color: #d61919;
+    color: #ffffff;
+}
+.text-red{
+    color: #ff0707;
+}
+.bg-green{
+    background-color: #38B000;
+    color: #FFFFFF;
+    padding: 7px;
+    border-radius: 5px;
+}
+.bg-red{
+    color: #FFFFFF;
+    background-color: #ff0707;
+    padding: 7px;
+    border-radius: 5px;
+}
+.card-alert-success{
+    background-color: #70e000;
+    padding: 7px;
+    border-radius: 5px;
+    border-bottom-right-radius: 20px;
+    color: #000000;
+    padding-left: 13px;
+    padding-right: 13px;
+    box-shadow: 2px 2px 4px 0px #073a07;
+}
 
+.form-input{
+    border-radius: 10px;
+    border-color: #008000;
+    transition: 0.1s;
+    min-height: 50px;
+    max-height: 50px;
+}
+
+.form-input:focus{
+    border-radius: 10px;
+    border-color: #008000;
+    border-width: 2px;
+    transition: 0.1s;
+}
+
+.form-input-error{
+    border-radius: 10px;
+    border-color: #e91313;
+    transition: 0.1s;
+}
+
+.form-input-error:focus{
+    border-radius: 10px;
+    border-color: #e91313;
+    outline: #e91313;
+    border-width: 2px;
+    transition: 0.1s;
+}
+
+select option:active{
+    padding: 10px;
+    background-color: #073a07;
+}
+/* super || admin */
 .sidebar{
     /* background-color: #38B000; */
     background-color: #FFFFFF;
@@ -226,12 +293,12 @@ body{
     padding: 15px;
     padding-bottom: 10px;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px 2px #38B000;
+    box-shadow: 2px 2px 2px 2px #33860d;
     border-bottom-left-radius: 30px;
     text-transform: uppercase;
 }
 .body-sidebar .item-active{
-    background-color: #70E000;
+    background-color: #38B000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -239,14 +306,14 @@ body{
     padding-bottom: 10px;
     border-radius: 10px;
     border-bottom-left-radius: 30px;
-    box-shadow:  2px 2px 2px 2px #006400;
+    box-shadow:  2px 2px 2px 2px #073a07;
     color: #000000;
     text-transform: uppercase;
     font-weight: bold;
 }
 .body-sidebar .item:hover{
-    background-color: #70E000;
-    box-shadow:  2px 2px 2px 2px #006400;
+    background-color: #38B000;
+    box-shadow:  2px 2px 2px 2px #073a07;
     color: #000000;
     /* align-items: center; */
 }

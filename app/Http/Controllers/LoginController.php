@@ -21,6 +21,8 @@ class LoginController extends Controller
                 return redirect()->intended('/super')->with('login', 'Anda Berhasil Login');
             }
         }
+
+        return back()->with('error', 'periksa email password anda');
     }
     public function logout(Request $request)
     {

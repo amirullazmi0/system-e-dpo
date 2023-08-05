@@ -2,19 +2,19 @@ import React from 'react'
 
 const Section2 = () => {
     const kejari = [
-        { id: 1, name: "Kabupaten Bengkayang" },
-        { id: 2, name: "Kabupaten Kapuas Hulu" },
-        { id: 3, name: "Kabupaten Kayong Utara" },
-        { id: 4, name: "Kabupaten Ketapang" },
-        { id: 5, name: "Kabupaten Kubu Raya" },
-        { id: 6, name: "Kabupaten Landak" },
-        { id: 7, name: "Kabupaten Melawi" },
-        { id: 8, name: "Kabupaten Mempawah" },
-        { id: 9, name: "Kabupaten Sambas" },
-        { id: 10, name: "Kabupaten Sekadau" },
-        { id: 11, name: "Kabupaten Sintang" },
-        { id: 12, name: "Kota Pontianak" },
-        { id: 13, name: "Kota Singkawang" },
+        { id: 1, name: "Kejari Pontianak" },
+        { id: 2, name: "Kejari Singkawang" },
+        { id: 3, name: "Kejari Mempawah" },
+        { id: 4, name: "Kejari Sambas" },
+        { id: 5, name: "Kejari Bengkayang" },
+        { id: 6, name: "Kejari Landak" },
+        { id: 7, name: "Kejari Sanggau" },
+        { id: 8, name: "Kejari Sekadau" },
+        { id: 9, name: "Kejari Sintang" },
+        { id: 10, name: "Kejari Kapuas Hulu" },
+        { id: 11, name: "Kejari Ketapang" },
+        { id: 12, name: "Cabjari Entikong" },
+        { id: 13, name: "Cabjari Pemangkat" },
     ]
     return (
         <>

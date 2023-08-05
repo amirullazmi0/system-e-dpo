@@ -2,10 +2,11 @@ import { Link } from '@inertiajs/react'
 import React from 'react'
 import Sidebar from '@/Components/Super/Sidebar';
 import Header from '@/Components/Super/Header';
-import FormAddAdmin from '@/Components/Super/FormAddAdmin';
+import FormEditAdmin from '@/Components/Super/FormEditAdmin';
 
 
-export default function AddAdmin(props) {
+
+export default function EditAdmin(props) {
     console.log('props', props);
     return (
         <>
@@ -15,7 +16,7 @@ export default function AddAdmin(props) {
                 </div>
                 <div className="col-span-5 ">
                     <Header login={props.flash.login} auth={props.auth} />
-                    <FormAddAdmin error={props.errors} />
+                    <FormEditAdmin user={props.user} error={props.errors} />
                 </div>
             </div>
         </>

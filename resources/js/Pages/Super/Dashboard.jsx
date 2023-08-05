@@ -5,6 +5,7 @@ import Header from '@/Components/Super/Header';
 import Section from '@/Components/Super/Section';
 
 export default function Dashboard(props) {
+    console.log('props', props);
     return (
         <>
             <div className="grid grid-cols-7">
@@ -12,8 +13,8 @@ export default function Dashboard(props) {
                     <Sidebar active={'admin'} />
                 </div>
                 <div className="col-span-5 ">
-                    <Header auth={props.auth} />
-                    <Section />
+                    <Header login={props.flash.login} auth={props.auth} />
+                    <Section notif={props.flash} user={props.user} />
                 </div>
             </div>
         </>
