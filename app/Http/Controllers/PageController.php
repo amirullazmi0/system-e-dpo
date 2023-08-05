@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Inertia\Inertia;
 
 class PageController extends Controller
@@ -10,7 +12,14 @@ class PageController extends Controller
     //
     public function login()
     {
-        $data = [];
+        if (Auth::check()) {
+            if (Auth()->user()->level == 1) {
+                return redirect()->intended('/super')->with('login', 'Anda Sudah login !');
+            }
+        }
+        $data = [
+            'user' => User::all()
+        ];
         return Inertia::render('Login', $data);
     }
     public function index()
