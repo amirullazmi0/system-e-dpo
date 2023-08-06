@@ -60,6 +60,7 @@ export default function Login(props) {
                         <button
                             className="btn btn-green"
                             onClick={() => handleLogin()}
+                            type='submit'
                         >
                             Login
                         </button>

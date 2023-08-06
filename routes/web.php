@@ -37,6 +37,13 @@ Route::middleware('auth')->group(function () {
     Route::post('/super/add-admin', [SuperController::class, 'store_admin']);
 
     Route::get('/super/edit-admin/{user:id}', [SuperController::class, 'editAdmin'])->name('supereditadmin');
+    Route::post('/super/edit-admin/{user:id}', [SuperController::class, 'updateAdmin']);
+    Route::post('/super/edit-admin/{user:id}/password', [SuperController::class, 'updatePassword']);
+    Route::post('/super/{user:id}/delete', [SuperController::class, 'deleteAdmin']);
+
+
+    Route::get('/super/edpo', [SuperController::class, 'edpo'])->name('superedpo');
+
     Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
     // Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     // Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');

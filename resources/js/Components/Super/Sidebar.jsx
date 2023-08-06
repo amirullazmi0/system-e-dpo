@@ -20,7 +20,13 @@ const Sidebar = ({ active }) => {
                 >
                     Admin
                 </Link>
-                <Link className='item'>E-DPO</Link>
+                <Link
+                    className={active == 'edpo' ? 'item-active' : 'item'}
+                    method='get'
+                    href={route('superedpo')}
+                >
+                    E-DPO
+                </Link>
             </div>
         </div>
     )
