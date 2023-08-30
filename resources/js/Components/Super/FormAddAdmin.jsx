@@ -30,6 +30,8 @@ const FormAddAdmin = ({ error }) => {
             name, email, password, password2, level, area
         }
 
+        console.log('admoin', data);
+
         router.post('/super/add-admin', data);
     }
 
@@ -92,10 +94,10 @@ const FormAddAdmin = ({ error }) => {
                     >
                         <option value="" hidden>Pilih Wilayah</option>
                         {level == 1 ?
-                            <option value="pusat">pusat</option>
+                            <option value={14}>Kejati Kalimantan Barat</option>
                             :
                             kejari.map((kk) => (
-                                <option key={kk.id} value={kk.name}>{kk.name}</option>
+                                <option key={kk.id} value={kk.id}>{kk.name}</option>
                             ))
                         }
                     </select>

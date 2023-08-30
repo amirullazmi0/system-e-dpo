@@ -3,9 +3,9 @@ import React from 'react'
 const Section1 = () => {
     return (
         <>
-            <div className="card-section1">
+            <div className="card-section1 bg-white">
                 <div className="header-section1">
-                    E-DPO
+                    Tentang E-DPO
                 </div>
                 <div className="body-section1">
                     DPO adalah daftar Pencarian Orang atau juga bisa dijuluki sebagai Buron merupakan orang yang sedang dicari keberadaannya dan diburu oleh pihak kepolisiannya karena melarikan diri dari kasus yang menimpanya. Adapun pengertian ini juga berkaitan dengan yang ada di KBBI.
@@ -18,8 +18,8 @@ const Section1 = () => {
                     Hal ini menjamin kepastian hukum bahwa masa berlakunya telah berakhir atau ingatan masyarakat tentang tindak pidana tertentu telah hilang selama jangka waktu tertentu, dan barang bukti yang digunakan untuk melakukan kejahatan tertentu kemungkinan besar akan hilang seiring berjalannya waktu (lihat Pasal 80 KUHP).
 
                     Sebelum dirilis surat Edaran Mahkamah Agung No. 1 tahun 2018 mengenai Larangan untuk mengajukan Gugatan Praperadilan bagi tersangka buron atau tercatat dalam Daftar Pencarian Orang.
+                    <img className='mt-3' src="https://i0.wp.com/kejati-kalbar.go.id/wp-content/uploads/2022/03/DJI_0162-scaled.jpg?fit=2560%2C1919&ssl=1" alt="" />
                 </div>
-                <img src="https://i0.wp.com/kejati-kalbar.go.id/wp-content/uploads/2022/03/DJI_0162-scaled.jpg?fit=2560%2C1919&ssl=1" alt="" />
             </div>
         </>
     )

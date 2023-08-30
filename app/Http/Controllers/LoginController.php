@@ -11,7 +11,7 @@ class LoginController extends Controller
     public function login(Request $request)
     {
         $credentials = $request->validate([
-            'email' => 'required|email:dns',
+            'email' => 'required|email',
             'password' => 'required'
         ]);
 
@@ -19,6 +19,9 @@ class LoginController extends Controller
             $request->session()->regenerate();
             if (Auth()->user()->level == 1) {
                 return redirect()->intended('/super')->with('login', 'Anda Berhasil Login');
+            }
+            if (Auth()->user()->level == 2) {
+                return redirect()->intended('/admin')->with('login', 'Anda Berhasil Login');
             }
         }
 

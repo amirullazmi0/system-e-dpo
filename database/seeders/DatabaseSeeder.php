@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
                 'email' => 'danke@gmail.com',
                 'level' => 1,
                 'area' => 'pusat',
-                'password' => bcrypt('passwordsuper')
+                'password' => bcrypt('11111')
             ],
         ];
         foreach ($user as $key => $value) {

@@ -15,20 +15,25 @@ return new class extends Migration
     {
         Schema::create('e-dpo', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('bornPlace');
-            $table->date('bornDate');
-            $table->string('age');
-            $table->string('gender');
-            $table->string('nation');
-            $table->longText('address')->nullable();
-            $table->string('profession')->nullable();
-            $table->string('status');
-            $table->string('casePosition');
-            $table->string('caseDecision');
-            $table->string('attemp');
-            $table->string('religion');
-            $table->string('photo');
+            $table->string('nama');
+            $table->string('tempatLahir');
+            $table->date('tanggalLahir');
+            $table->string('umur');
+            $table->string('jk');
+            $table->string('pendidikan')->nullable();
+            $table->longText('alamat')->nullable();
+            $table->string('profesi')->nullable();
+            $table->longText('kasusPosisi');
+            $table->string('pidum')->nullable();
+            $table->string('pidsus')->nullable();
+            $table->longText('hukuman');
+            $table->string('agama');
+            $table->integer('wilayah')->nullable();
+            $table->boolean('tertangkap')->autoIncrement(0);
+            $table->string('tanggalTertangkap')->nullable();
+            $table->string('keteranganTertangkap')->nullable();
+            $table->longText('dasarPenetapan')->nullable();
+            $table->string('foto')->nullable();
             $table->timestamps();
         });
     }

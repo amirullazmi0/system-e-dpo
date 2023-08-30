@@ -109,10 +109,10 @@ const FormEditAdmin = ({ notif, user, error }) => {
                         >
                             <option value="" hidden>Pilih Wilayah</option>
                             {level == 1 ?
-                                <option value="pusat">pusat</option>
+                                <option value={14}>Kejati Kalimantan</option>
                                 :
                                 kejari.map((kk) => (
-                                    <option key={kk.id} value={kk.name}>{kk.name}</option>
+                                    <option key={kk.id} value={kk.id}>{kk.name}</option>
                                 ))
                             }
                         </select>

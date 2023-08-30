@@ -12,19 +12,34 @@ class EDPO extends Model
     protected $table = 'e-dpo';
 
     protected $fillable = [
-        'name',
-        'bornPlace',
-        'bornDate',
-        'age',
-        'gender',
-        'nation',
-        'address',
-        'profession',
-        'status',
-        'casePosition',
-        'caseDesition',
-        'attemp',
-        'religion',
-        'photo',
+        'nama',
+        'tempatLahir',
+        'tanggalLahir',
+        'umur',
+        'jk',
+        'kasusPosisi',
+        'hukuman',
+        'agama',
+        'dasarPenetapan',
+        'foto',
+        'pendidikan',
+        'alamat',
+        'profesi',
+        'pidum',
+        'pidsus',
+        'wilayah',
+        'tertangkap',
+        // 'waktuTertangkap',
+        // 'keteranganTertangkap'
     ];
+
+    // protected $nullable = [
+    //     'pendidikan',
+    //     'alamat',
+    //     'profesi',
+    //     'pidum',
+    //     'pidsus',
+    //     'wilayah',
+    //     'tertangkap',
+    // ];
 }

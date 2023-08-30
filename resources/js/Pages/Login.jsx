@@ -16,7 +16,7 @@ export default function Login(props) {
     }
     return (
         <>
-            <Head title='Login' />
+            <Head title="Login" />
             <div className='grid lg:grid-cols-2'>
                 <div className='col-span-1 login'>
                     <div className="card-login">
@@ -28,10 +28,18 @@ export default function Login(props) {
                                 <h1>kalimantan Barat</h1>
                             </div>
                         </div>
-                        {props.errors.email != null || props.errors.password != null || props.flash.error ?
+                        {props.errors.email != null || props.errors.password != null ?
                             <>
                                 <div className="card-errors flex justify-center">
                                     periksa kembali password dan email
+                                </div>
+                            </>
+                            : null
+                        }
+                        {props.flash.error ?
+                            <>
+                                <div className="card-errors flex justify-center">
+                                    {props.flash.error}
                                 </div>
                             </>
                             : null

@@ -2,6 +2,7 @@ import React from 'react'
 
 const Section2 = () => {
     const kejari = [
+        { id: 14, name: "Kejati kalimantan Barat" },
         { id: 1, name: "Kejari Pontianak" },
         { id: 2, name: "Kejari Singkawang" },
         { id: 3, name: "Kejari Mempawah" },
@@ -18,16 +19,20 @@ const Section2 = () => {
     ]
     return (
         <>
-            <div className="card-section2">
-                <div className="header-section2">
+            <div className="card-section2 bg-white">
+                {/* <div className="header-section2">
                     Kejari
-                </div>
-                <div className="body-section2">
-                    {kejari.map((kk) => (
-                        <button key={kk.id} className="btn w-full btn-md">
-                            {kk.name}
-                        </button>
-                    ))}
+                </div> */}
+                <div className="body-section2 p-3">
+                    <ul>
+                        {kejari.map((kk) => (
+                            <>
+                                <li className='bg-white mb-3 text-center'>
+                                    {kk.name}
+                                </li>
+                            </>
+                        ))}
+                    </ul>
                 </div>
             </div>
         </>

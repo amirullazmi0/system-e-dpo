@@ -5,7 +5,7 @@ const Sidebar = ({ active }) => {
     return (
         <div className='sidebar'>
             <div className="head-sidebar">
-                <img className='h-20 border-r-4 border-gray-950 pr-3' src="/assets/img/logo.png" alt="" />
+                <img className='h-20' src="/assets/img/logo.png" alt="" />
                 <div className="head-text">
                     <h1>Kejaksaan</h1>
                     <h1>tinggi</h1>
@@ -26,6 +26,13 @@ const Sidebar = ({ active }) => {
                     href={route('superedpo')}
                 >
                     E-DPO
+                </Link>
+                <Link
+                    className={active == 'tertangkap' ? 'item-active' : 'item'}
+                    method='get'
+                    href={route('supertertangkap')}
+                >
+                    Tertangkap
                 </Link>
             </div>
         </div>

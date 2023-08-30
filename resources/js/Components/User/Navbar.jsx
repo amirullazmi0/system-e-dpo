@@ -1,7 +1,12 @@
 import { Link } from '@inertiajs/react'
 import React from 'react'
 
+
 const Navbar = ({ active }) => {
+    const data = {
+        id: 0,
+        wilayah: 'Semua'
+    }
     return (
         <>
             <div className='nav'>
@@ -11,14 +16,14 @@ const Navbar = ({ active }) => {
                     </p>
 
                 </Link>
-                <Link method='get' href={route('edpo')} className={active == 'edpo' ? "nav-item-active" : "nav-item"} >
+                <Link method='get' href={"/edpo"} data={data} className={active == 'edpo' ? "nav-item-active" : "nav-item"} >
 
                     <p>
                         E-DPO
                     </p>
 
                 </Link >
-                <Link method='get' href={route('tertangkap')} className={active == 'tertangkap' ? "nav-item-active" : "nav-item"}>
+                <Link method='get' href={"/tertangkap"} data={data} className={active == 'tertangkap' ? "nav-item-active" : "nav-item"}>
 
                     <p>
                         Tertangkap
