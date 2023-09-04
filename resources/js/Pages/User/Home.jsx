@@ -11,11 +11,11 @@ export default function Home() {
             <Head title='Tentang E-DPO' />
             <Header />
             <Navbar active={'home'} />
-            <div className='grid grid-cols-6'>
-                <div className="col-span-4 section-1">
+            <div className='grid lg:grid-cols-6'>
+                <div className="lg:col-span-4 section-1">
                     <Section1 />
                 </div>
-                <div className="col-span-2 section-2">
+                <div className="lg:col-span-2 section-2">
                     <Section2 />
                 </div>
             </div>

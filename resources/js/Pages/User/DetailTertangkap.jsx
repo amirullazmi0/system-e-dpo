@@ -43,7 +43,7 @@ export default function DetailTertangkap(props) {
             <Navbar active={'tertangkap'} />
             <div className='section-1'>
                 <div className='flex justify-center items-center'>
-                    <div className="card-section1 bg-white  w-8/12">
+                    <div className="card-section1 bg-white  lg:w-8/12">
                         {edpo &&
                             <div className='p-4'>
                                 <div className="grid grid-cols-3">
@@ -55,94 +55,94 @@ export default function DetailTertangkap(props) {
                                             </svg>
                                         </button>
                                     </div>
-                                    <div className="col-span-1 flex items-center">
+                                    <div className="lg:col-span-1 col-span-3 flex items-center">
                                         <div className='flex justify-center w-full'>
                                             <img src={"/assets/img/dpo/" + edpo.foto} alt="" />
                                         </div>
                                     </div>
-                                    <div className="col-span-2">
-                                        <div className="grid grid-cols-5 mb-2">
+                                    <div className="lg:col-span-2 col-span-3">
+                                        <div className="lg:grid grid-cols-5 mb-2">
                                             <div className="col-span-1 font-bold">
                                                 Nama
                                             </div>
-                                            <div className="col-span-1 ">
+                                            <div className="lg:col-span-1 lg:block hidden">
                                                 :
                                             </div>
                                             <div className="col-span-3">
                                                 {edpo.nama}
                                             </div>
                                         </div>
-                                        <div className="grid grid-cols-5 mb-2">
+                                        <div className="lg:grid grid-cols-5 mb-2">
                                             <div className="col-span-1 font-bold">
                                                 Tempat Lahir
                                             </div>
-                                            <div className="col-span-1">
+                                            <div className="lg:col-span-1 lg:block hidden">
                                                 :
                                             </div>
                                             <div className="col-span-3">
                                                 {edpo.tempatLahir}
                                             </div>
                                         </div>
-                                        <div className="grid grid-cols-5 mb-2">
+                                        <div className="lg:grid grid-cols-5 mb-2">
                                             <div className="col-span-1 font-bold">
                                                 Tanggal Lahir
                                             </div>
-                                            <div className="col-span-1">
+                                            <div className="lg:col-span-1 lg:block hidden">
                                                 :
                                             </div>
                                             <div className="col-span-3">
                                                 {edpo.tanggalLahir}
                                             </div>
                                         </div>
-                                        <div className="grid grid-cols-5 mb-2">
+                                        <div className="lg:grid grid-cols-5 mb-2">
                                             <div className="col-span-1 font-bold">
                                                 Usia
                                             </div>
-                                            <div className="col-span-1">
+                                            <div className="lg:col-span-1 lg:block hidden">
                                                 :
                                             </div>
                                             <div className="col-span-3">
                                                 {edpo.umur}
                                             </div>
                                         </div>
-                                        <div className="grid grid-cols-5 mb-2">
+                                        <div className="lg:grid grid-cols-5 mb-2">
                                             <div className="col-span-1 font-bold">
                                                 Agama
                                             </div>
-                                            <div className="col-span-1">
+                                            <div className="lg:col-span-1 lg:block hidden">
                                                 :
                                             </div>
                                             <div className="col-span-3">
                                                 {edpo.agama}
                                             </div>
                                         </div>
-                                        <div className="grid grid-cols-5 mb-2">
+                                        <div className="lg:grid grid-cols-5 mb-2">
                                             <div className="col-span-1 font-bold">
                                                 Jenis Kelamin
                                             </div>
-                                            <div className="col-span-1">
+                                            <div className="lg:col-span-1 lg:block hidden">
                                                 :
                                             </div>
                                             <div className="col-span-3">
                                                 {edpo.jk}
                                             </div>
                                         </div>
-                                        <div className="grid grid-cols-5 mb-2">
+                                        <div className="lg:grid grid-cols-5 mb-2">
                                             <div className="col-span-1 font-bold">
                                                 Profesi
                                             </div>
-                                            <div className="col-span-1">
+                                            <div className="lg:col-span-1 lg:block hidden">
                                                 :
                                             </div>
                                             <div className="col-span-3">
                                                 {edpo.profesi}
                                             </div>
                                         </div>
-                                        <div className="grid grid-cols-5 mb-2">
+                                        <div className="lg:grid grid-cols-5 mb-2">
                                             <div className="col-span-1 font-bold">
                                                 Pendidikan
                                             </div>
-                                            <div className="col-span-1">
+                                            <div className="lg:col-span-1 lg:block hidden">
                                                 :
                                             </div>
                                             <div className="col-span-3">

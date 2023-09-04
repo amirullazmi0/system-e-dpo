@@ -17,12 +17,12 @@ export default function Login(props) {
     return (
         <>
             <Head title="Login" />
-            <div className='grid lg:grid-cols-2'>
-                <div className='col-span-1 login'>
+            <div className='lg:grid lg:grid-cols-2'>
+                <div className='lg:col-span-1 login'>
                     <div className="card-login">
-                        <div className="card-login-header flex justify-center gap-3">
+                        <div className="flex justify-center gap-2">
                             <img className='h-24 pr-3 border-stone-950 border-r-4' src="assets/img/logo.png" alt="" />
-                            <div className="grid text-lg uppercase font-bold">
+                            <div className="grid lg:text-lg uppercase font-bold">
                                 <h1>kejaksaan</h1>
                                 <h1>Tinggi</h1>
                                 <h1>kalimantan Barat</h1>

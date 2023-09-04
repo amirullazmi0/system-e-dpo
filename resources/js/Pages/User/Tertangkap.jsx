@@ -11,11 +11,14 @@ export default function Tertangkap(props) {
             <Head title='Daftar Tertangkap' />
             <Header />
             <Navbar active={'tertangkap'} />
-            <div className='grid grid-cols-6'>
-                <div className="col-span-4 section-1">
+            <div className='grid lg:grid-cols-6'>
+                <div className="lg:col-span-4 section-1">
+                    <div className="lg:hidden">
+                        <Section2Tertangkap active={props.active} />
+                    </div>
                     <Section1Tertangkap edpo={props.edpo} />
                 </div>
-                <div className="col-span-2 section-2">
+                <div className="lg:col-span-2 lg:block hidden section-2">
                     <Section2Tertangkap active={props.active} />
                 </div>
             </div>

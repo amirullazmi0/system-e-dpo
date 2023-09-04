@@ -27,99 +27,99 @@ const SectionDetailEdpo = ({ edpo }) => {
     return (
         <>
             {iniEdpo &&
-                <div className='section-super mb-7 p-8 lg:mr-6'>
+                <div className='section-super mb-7 lg:p-7 lg:m-0 m-3 p-3 lg:mr-6'>
                     <div className="grid grid-cols-3">
                         <div className="col-span-3 mb-6">
                             <h1 className='uppercase text-3xl font-bold'>Detail E-dpo</h1>
                         </div>
-                        <div className="col-span-1 flex items-center">
-                            <div className='flex justify-center w-full'>
+                        <div className="lg:col-span-1 col-span-3 flex items-center">
+                            <div className='flex justify-center bg-contain w-full '>
                                 <img src={"/assets/img/dpo/" + iniEdpo.foto} alt="" />
                             </div>
                         </div>
-                        <div className="col-span-2">
-                            <div className="grid grid-cols-5 mb-2">
+                        <div className="lg:col-span-2 col-span-3">
+                            <div className="lg:grid grid-cols-5 mb-2">
                                 <div className="col-span-1 font-bold">
                                     Nama
                                 </div>
-                                <div className="col-span-1 ">
+                                <div className="lg:col-span-1 lg:block hidden">
                                     :
                                 </div>
                                 <div className="col-span-3">
                                     {iniEdpo.nama}
                                 </div>
                             </div>
-                            <div className="grid grid-cols-5 mb-2">
+                            <div className="lg:grid grid-cols-5 mb-2">
                                 <div className="col-span-1 font-bold">
                                     Tempat Lahir
                                 </div>
-                                <div className="col-span-1">
+                                <div className="lg:col-span-1 lg:block hidden">
                                     :
                                 </div>
                                 <div className="col-span-3">
                                     {iniEdpo.tempatLahir}
                                 </div>
                             </div>
-                            <div className="grid grid-cols-5 mb-2">
+                            <div className="lg:grid grid-cols-5 mb-2">
                                 <div className="col-span-1 font-bold">
                                     Tanggal Lahir
                                 </div>
-                                <div className="col-span-1">
+                                <div className="lg:col-span-1 lg:block hidden">
                                     :
                                 </div>
                                 <div className="col-span-3">
                                     {iniEdpo.tanggalLahir}
                                 </div>
                             </div>
-                            <div className="grid grid-cols-5 mb-2">
+                            <div className="lg:grid grid-cols-5 mb-2">
                                 <div className="col-span-1 font-bold">
                                     Usia
                                 </div>
-                                <div className="col-span-1">
+                                <div className="lg:col-span-1 lg:block hidden">
                                     :
                                 </div>
                                 <div className="col-span-3">
                                     {iniEdpo.umur}
                                 </div>
                             </div>
-                            <div className="grid grid-cols-5 mb-2">
+                            <div className="lg:grid grid-cols-5 mb-2">
                                 <div className="col-span-1 font-bold">
                                     Agama
                                 </div>
-                                <div className="col-span-1">
+                                <div className="lg:col-span-1 lg:block hidden">
                                     :
                                 </div>
                                 <div className="col-span-3">
                                     {iniEdpo.agama}
                                 </div>
                             </div>
-                            <div className="grid grid-cols-5 mb-2">
+                            <div className="lg:grid grid-cols-5 mb-2">
                                 <div className="col-span-1 font-bold">
                                     Jenis Kelamin
                                 </div>
-                                <div className="col-span-1">
+                                <div className="lg:col-span-1 lg:block hidden">
                                     :
                                 </div>
                                 <div className="col-span-3">
                                     {iniEdpo.jk}
                                 </div>
                             </div>
-                            <div className="grid grid-cols-5 mb-2">
+                            <div className="lg:grid grid-cols-5 mb-2">
                                 <div className="col-span-1 font-bold">
                                     Profesi
                                 </div>
-                                <div className="col-span-1">
+                                <div className="lg:col-span-1 lg:block hidden">
                                     :
                                 </div>
                                 <div className="col-span-3">
                                     {iniEdpo.profesi}
                                 </div>
                             </div>
-                            <div className="grid grid-cols-5 mb-2">
+                            <div className="lg:grid grid-cols-5 mb-2">
                                 <div className="col-span-1 font-bold">
                                     Pendidikan
                                 </div>
-                                <div className="col-span-1">
+                                <div className="lg:col-span-1 lg:block hidden">
                                     :
                                 </div>
                                 <div className="col-span-3">

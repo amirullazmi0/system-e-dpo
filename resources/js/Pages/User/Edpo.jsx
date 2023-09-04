@@ -11,11 +11,14 @@ export default function Edpo(props) {
             <Head title='Daftar E-DPO' />
             <Header />
             <Navbar active={'edpo'} />
-            <div className='grid grid-cols-6'>
-                <div className="col-span-4 section-1">
+            <div className='lg:grid lg:grid-cols-6'>
+                <div className="lg:col-span-4 section-1">
+                    <div className="lg:hidden">
+                        <Section2Edpo active={props.active} />
+                    </div>
                     <Section1Edpo edpo={props.edpo} />
                 </div>
-                <div className="col-span-2 section-2">
+                <div className="lg:block hidden lg:col-span-2 section-2">
                     <Section2Edpo active={props.active} />
                 </div>
             </div>

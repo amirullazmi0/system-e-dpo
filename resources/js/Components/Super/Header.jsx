@@ -4,13 +4,17 @@ import { useEffect } from 'react';
 import { useCallback } from 'react';
 import { useState } from 'react';
 
-const Header = ({ login, auth }) => {
+const Header = ({ handle, login, auth }) => {
     const [notifLogin, setNotifLogin] = useState()
     const [iniNotif, setNotif] = useState(false)
 
     const handleNotif = () => {
         setNotif(false)
         // setNotifLogin(null)
+    }
+
+    const handleSidebar = () => {
+        handle(true)
     }
     const renderNotif = useCallback(() => {
         // if (notifLogin) {
@@ -52,7 +56,12 @@ const Header = ({ login, auth }) => {
         }
     }, [login])
     return (
-        <div className='header-super flex justify-between items-center gap-1 p-7'>
+        <div className='header-super flex justify-between items-center gap-1 lg:p-7'>
+            <button onClick={() => handleSidebar()} className='btn lg:hidden block btn-sm btn-ghost ml-[-5]'>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+                </svg>
+            </button>
             <div>
                 {renderNotif()}
             </div>
