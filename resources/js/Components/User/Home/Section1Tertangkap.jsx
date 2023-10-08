@@ -15,7 +15,7 @@ const Section1Tertangkap = ({ edpo }) => {
                 <div className="header-section1">
                     E-DPO Tertangkap
                 </div>
-                <div className="body-section1 w-80">
+                <div className="body-section1">
                     {edpo.length > 0 ?
                         <div className="overflow-x-auto">
                             <table className="table">

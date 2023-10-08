@@ -45,7 +45,7 @@ const FormEditAdmin = ({ notif, user, error }) => {
     }
     return (
         <>
-            <div className='section-super p-7 lg:mr-6'>
+            <div className='section-super mb-7 lg:p-7 lg:m-0 m-3 p-3 lg:mr-6'>
                 <h1 className='font-bold text-xl flex items-center gap-2'>
                     Form Edit Admin <div className="bg-green">
                         <small>
